@@ -29,7 +29,46 @@ const ChatbotIframe = () => {
                 bottom: 20px;
                 right: -30px;
                 padding: 15px;
-                
+            }
+        }
+
+        @media (max-width: 480px) {
+            .chat-frame {
+                width: 100vw;
+                height: 90vh;
+                bottom: 0;
+                right: 0;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 414px) {
+            .chat-frame {
+                width: 100vw;
+                height: 90vh;
+                bottom: 0;
+                right: 0;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .chat-frame {
+                width: 100vw;
+                height: 90vh;
+                bottom: 0;
+                right: 0;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .chat-frame {
+                width: 100vw;
+                height: 90vh;
+                bottom: 0;
+                right: 0;
+                padding: 10px;
             }
         }
     `);
