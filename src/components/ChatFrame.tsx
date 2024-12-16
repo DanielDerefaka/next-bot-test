@@ -15,12 +15,23 @@ const ChatbotIframe = () => {
     }
     
     iframeStyles(`
-      .chat-frame {
-        position: fixed;
-        bottom: 50px;
-        right: 50px;
-        border: none;
-      }
+           .chat-frame {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border: none;
+        }
+
+        @media (max-width: 767px) {
+            .chat-frame {
+                width: 100vw;
+                height: 90vh;
+                bottom: 20px;
+                right: -30px;
+                padding: 15px;
+                
+            }
+        }
     `);
     
     iframe.src = "https://pictel-ai.vercel.app/chatbot";
